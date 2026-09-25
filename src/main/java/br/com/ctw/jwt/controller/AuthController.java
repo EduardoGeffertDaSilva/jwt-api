@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private AuthenticationManager authenticationManager;
-    private TokenService tokenService;
+    private final AuthenticationManager authenticationManager;
+    private final TokenService tokenService;
 
     @PostMapping("/login")
     private ResponseEntity<AuthenticationResponseDto> fazerAutenticacao(@RequestBody @Valid AuthenticationRequestDto requestDto){

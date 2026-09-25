@@ -1,5 +1,4 @@
 package br.com.ctw.jwt.service;
-import br.com.ctw.jwt.entity.User;
 import br.com.ctw.jwt.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

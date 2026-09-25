@@ -1,11 +1,11 @@
 package br.com.ctw.jwt.config;
+import br.com.ctw.jwt.entity.Role;
 import br.com.ctw.jwt.entity.User;
 import br.com.ctw.jwt.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
 import java.util.List;
 
 @Configuration
@@ -23,12 +23,12 @@ public class InitialDataInsert implements CommandLineRunner {
                     User.builder()
                             .username("Eduardo")
                             .password(passwordEncoder.encode("1234"))
-                            .role("ADMIN")
+                            .role(Role.ADMIN)
                             .build(),
                     User.builder()
                             .username("Gui")
                             .password(passwordEncoder.encode("12345"))
-                            .role("USER")
+                            .role(Role.USER)
                             .build()
             );
 
