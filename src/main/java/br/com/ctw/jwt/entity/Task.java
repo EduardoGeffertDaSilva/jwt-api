@@ -31,7 +31,7 @@ public class Task {
             nullable = false
     )
     private Boolean completed;
-
+    
     @ManyToOne()
     @JoinColumn(
             name = "user_id"

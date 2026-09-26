@@ -18,7 +18,7 @@ public class InitialDataInsert implements CommandLineRunner {
     @Override
     public void run(String ... args)throws Exception{
 
-        if(repository.count() == 0){
+        if(repository.count() < 4){
             List<User> initialUsers = List.of(
                     User.builder()
                             .username("Eduardo")

@@ -1,4 +1,4 @@
-package br.com.ctw.jwt.dto;
+package br.com.ctw.jwt.dto.auth;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 

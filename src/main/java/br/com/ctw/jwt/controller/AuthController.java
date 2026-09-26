@@ -1,6 +1,6 @@
 package br.com.ctw.jwt.controller;
-import br.com.ctw.jwt.dto.AuthenticationRequestDto;
-import br.com.ctw.jwt.dto.AuthenticationResponseDto;
+import br.com.ctw.jwt.dto.auth.AuthenticationRequestDto;
+import br.com.ctw.jwt.dto.auth.AuthenticationResponseDto;
 import br.com.ctw.jwt.entity.User;
 import br.com.ctw.jwt.service.TokenService;
 import jakarta.validation.Valid;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
 public class AuthController {
 

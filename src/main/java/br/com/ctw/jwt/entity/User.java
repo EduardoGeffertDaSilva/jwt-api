@@ -37,7 +37,8 @@ public class User implements UserDetails {
     )
     private Role role;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "userId")
+    @Builder.Default
     private List<Task> tasks = new ArrayList<>();
 
     @Override
